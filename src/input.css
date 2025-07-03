@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  /* Custom screens/breakpoints */
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+  --breakpoint-xl: 1440px;
+
+  /* Custom fonts */
+  --font-family-sans: "Josefin Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-family-alata: "Alata", ui-sans-serif, system-ui, sans-serif;
+
+  /* Custom letter spacing */
+  --tracking-widester: 0.5em;
+}
+
+/* Custom font utility - defined directly */
+.font-alata {
+  font-family: "Alata", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer components {
+  .btn {
+    @apply px-10 py-2 my-0 font-bold tracking-widester uppercase border-2 border-black hover:bg-black hover:text-white cursor-pointer transition-colors duration-300;
+    font-family: "Alata", ui-sans-serif, system-ui, sans-serif;
+  }
+
+  /* Navigation Hover Effects */
+  .nav-item {
+    @apply relative px-4 py-2 rounded-lg;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: scale(1);
+    background: transparent;
+    backdrop-filter: blur(0px);
+    box-shadow: 0 0 0 rgba(59, 130, 246, 0), 0 0 0 rgba(147, 51, 234, 0),
+      inset 0 0 0 rgba(255, 255, 255, 0);
+  }
+
+  .nav-item:hover {
+    transform: scale(1.1);
+    background: linear-gradient(
+      135deg,
+      rgba(59, 130, 246, 0.3),
+      rgba(147, 51, 234, 0.3)
+    );
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.4),
+      0 0 40px rgba(147, 51, 234, 0.2), inset 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-item a {
+    @apply relative z-10 transition-all duration-300 ease-in-out;
+    text-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  }
+
+  .nav-item:hover a {
+    @apply text-white font-bold;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+
+  /* Animated underline effect */
+  .nav-item::after {
+    content: "";
+    @apply absolute bottom-0 left-1/2 h-0.5 bg-gradient-to-r from-blue-400 to-purple-500;
+    width: 0;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+  }
+
+  .nav-item:hover::after {
+    width: 100%;
+  }
+}
+
+@layer base {
+  body {
+    font-family: "Josefin Sans", sans-serif;
+  }
+  h5 {
+    @apply absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black;
+  }
+}
+
+.item-container {
+  @apply flex flex-col justify-between w-full space-y-6 text-2xl text-white uppercase md:flex-row md:space-y-0 md:space-x-8;
+}
+
+.item {
+  @apply relative overflow-hidden md:w-1/4;
+}
+
+.item-gradient {
+  @apply absolute inset-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70 duration-700;
+}
+
+#hero {
+  background-image: url("../images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 576px) {
+  #hero {
+    background-image: url("../images/mobile/image-hero.jpg");
+    background-position: center;
+  }
+}
