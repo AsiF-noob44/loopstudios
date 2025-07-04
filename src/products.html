@@ -1,0 +1,387 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="/images/desktop/image-hero.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <title>Products - Loop Studios</title>
+</head>
+
+<body>
+    <!-- Header Section with Background -->
+    <section class="bg-gradient-to-b from-blue-900 to-cyan-900 py-20">
+        <div class="container max-w-6xl mx-auto px-6 py-12">
+            <!-- Menu/Logo Container -->
+            <nav
+                class="flex items-center justify-between font-bold text-white bg-black/30 backdrop-blur-sm px-6 py-4 rounded-lg relative z-[70]">
+                <!-- Logo -->
+                <a href="index.html">
+                    <img src="/images/logo.svg" alt="Loop Studios Logo">
+                </a>
+
+                <!-- Menu -->
+                <div class="hidden h-10 font-alata md:flex md:space-x-2">
+                    <div class="nav-item">
+                        <a href="about.html" class="drop-shadow-lg">About</a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="events.html" class="drop-shadow-lg">Events</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="products.html" class="drop-shadow-lg">Products</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="support.html" class="drop-shadow-lg">Support</a>
+                    </div>
+                </div>
+
+                <!-- Hamburger Menu -->
+                <div class="md:hidden">
+                    <button id="menu-btn" type="button"
+                        class="z-[60] block hamburger md:hidden focus:outline-none relative"
+                        aria-label="Toggle mobile menu" aria-expanded="false">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <div id="menu" class="fixed top-0 left-0 right-0 hidden flex-col w-full h-screen pt-32 px-8 space-y-8
+                text-xl text-white uppercase bg-black/80 backdrop-blur-md z-50 
+                transform transition-all duration-700 ease-in-out">
+                <a href="about.html"
+                    class="menu-item hover:text-pink-500 transition-colors duration-300 py-3 border-b border-white/20 hover:border-pink-500/50">About</a>
+                <a href="events.html"
+                    class="menu-item hover:text-pink-500 transition-colors duration-300 py-3 border-b border-white/20 hover:border-pink-500/50">Events</a>
+                <a href="products.html"
+                    class="menu-item hover:text-pink-500 transition-colors duration-300 py-3 border-b border-white/20 hover:border-pink-500/50">Products</a>
+                <a href="support.html"
+                    class="menu-item hover:text-pink-500 transition-colors duration-300 py-3 border-b border-white/20 hover:border-pink-500/50">Support</a>
+            </div>
+
+            <!-- Page Title -->
+            <div class="max-w-4xl mx-auto mt-20 text-center">
+                <h1 class="text-5xl font-bold text-white mb-8 md:text-6xl">Our Products</h1>
+                <div class="h-1 w-40 bg-gradient-to-r from-blue-400 to-cyan-500 mx-auto"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-20">
+        <div class="container max-w-6xl mx-auto px-6">
+            <!-- Product Categories -->
+            <div class="flex flex-wrap justify-center mb-16">
+                <button
+                    class="m-2 px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors">All
+                    Products</button>
+                <button
+                    class="m-2 px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition-colors">VR
+                    Headsets</button>
+                <button
+                    class="m-2 px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition-colors">Software</button>
+                <button
+                    class="m-2 px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition-colors">Enterprise
+                    Solutions</button>
+                <button
+                    class="m-2 px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition-colors">Accessories</button>
+            </div>
+
+            <!-- Featured Product -->
+            <div class="mb-20 bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl overflow-hidden shadow-xl">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8 md:p-12">
+                        <span
+                            class="inline-block px-4 py-1 bg-blue-600 text-white rounded-full text-sm font-semibold mb-4">Featured
+                            Product</span>
+                        <h2 class="text-3xl font-bold mb-4 text-gray-800">LoopVR Pro X</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Our flagship VR headset delivers unprecedented immersion with industry-leading resolution,
+                            field of view, and comfort. Experience virtual worlds like never before with the LoopVR Pro
+                            X.
+                        </p>
+                        <div class="flex flex-wrap gap-4 mb-8">
+                            <span class="px-4 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">8K Resolution</span>
+                            <span class="px-4 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">140° FOV</span>
+                            <span class="px-4 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Wireless</span>
+                            <span class="px-4 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">10hr Battery</span>
+                        </div>
+                        <div class="flex items-center mb-6">
+                            <span class="text-3xl font-bold text-gray-800 mr-3">$999</span>
+                            <span class="text-lg line-through text-gray-500">$1299</span>
+                        </div>
+                        <button
+                            class="bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl cursor-pointer">
+                            Pre-order Now
+                        </button>
+                    </div>
+                    <div class="md:w-1/2 relative overflow-hidden">
+                        <img src="/images/desktop/VR-pro-x.jpg" alt="LoopVR Pro X" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <h2 class="text-3xl font-bold mb-8 text-gray-800">All Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Product 1 -->
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="/images/desktop/loop-vr-lite.jpg" alt="LoopVR Lite"
+                            class="w-full h-full object-cover object-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent">
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">LoopVR Lite</h3>
+                        <p class="text-gray-600 mb-4">Affordable VR experience with excellent performance for casual
+                            users.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-gray-800">$399</span>
+                            <button
+                                class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors cursor-pointer">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="/images/desktop/vr-studio.jpg" alt="LoopVR Studio"
+                            class="w-full h-full object-cover object-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-purple-900/30 to-transparent">
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">LoopVR Studio</h3>
+                        <p class="text-gray-600 mb-4">Professional-grade VR system for content creators and developers.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-gray-800">$799</span>
+                            <button
+                                class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors cursor-pointer">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="/images/desktop/motion-controller.jpg" alt="Motion Controllers"
+                            class="w-full h-full object-cover object-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-green-900/30 to-transparent">
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Motion Controllers</h3>
+                        <p class="text-gray-600 mb-4">Advanced haptic feedback controllers for precise interaction.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-gray-800">$199</span>
+                            <button
+                                class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors cursor-pointer">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="/images/desktop/vr-software.jpg" alt="LoopVR Create Software"
+                            class="w-full h-full object-cover object-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-amber-900/30 to-transparent">
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">LoopVR Create Software</h3>
+                        <p class="text-gray-600 mb-4">Professional VR content creation suite with intuitive tools.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-gray-800">$299</span>
+                            <button
+                                class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors cursor-pointer">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="/images/desktop/enterprise-training-solution.jpg" alt="Enterprise Training Solution"
+                            class="w-full h-full object-cover object-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/30 to-transparent">
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Enterprise Training Solution</h3>
+                        <p class="text-gray-600 mb-4">Complete package for corporate VR training programs.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-gray-800">$2499</span>
+                            <button
+                                class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors cursor-pointer">Contact
+                                Sales</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="/images/desktop/spatial-audio-headphones.jpg" alt="Spatial Audio Headphones"
+                            class="w-full h-full object-cover object-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-rose-900/30 to-transparent">
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Spatial Audio Headphones</h3>
+                        <p class="text-gray-600 mb-4">Premium 3D audio headphones designed for immersive VR experiences.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-gray-800">$149</span>
+                            <button
+                                class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors cursor-pointer">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="bg-gradient-to-r from-blue-600 to-cyan-500 rounded-xl p-8 md:p-12 text-white text-center">
+                <h3 class="text-2xl md:text-3xl font-bold mb-4">Join the LoopVR Developer Program</h3>
+                <p class="max-w-2xl mx-auto mb-8">Get exclusive access to our SDK, development tools, and early hardware
+                    prototypes. Create the next generation of immersive experiences with our support.</p>
+                <button
+                    class="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-lg font-bold shadow-lg transition-colors cursor-pointer">
+                    Apply Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gradient-to-b from-gray-900 to-black border-t border-gray-800">
+        <!-- Container -->
+        <div class="container max-w-6xl py-16 mx-auto px-6">
+            <!-- Footer Flex Container -->
+            <div class="flex flex-col items-center space-y-8 md:space-y-0">
+
+                <!-- Top Row: Logo and Social Icons -->
+                <div
+                    class="flex flex-col items-center w-full md:flex-row md:justify-between md:items-center mb-8 md:mb-6">
+                    <!-- Logo -->
+                    <div class="mb-8 md:mb-0 transform hover:scale-105 transition-transform duration-300">
+                        <a href="index.html">
+                            <img src="/images/logo.svg" alt="footer logo"
+                                class="w-48 md:w-44 filter brightness-110 cursor-pointer">
+                        </a>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="flex items-center justify-center space-x-6 md:justify-end">
+                        <!-- Facebook -->
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="group flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-blue-500 to-blue-800 hover:from-blue-400 hover:to-blue-600 shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-200">
+                                <path
+                                    d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0" />
+                            </svg>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="group flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-cyan-600 to-blue-900 hover:from-cyan-400 hover:to-blue-700 shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-200">
+                                <path
+                                    d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM7.12 20.452H3.56V9.048h3.56v11.404zM5.34 7.633c-1.137 0-2.06-.924-2.06-2.06 0-1.137.923-2.06 2.06-2.06 1.137 0 2.06.923 2.06 2.06 0 1.136-.923 2.06-2.06 2.06zm15.112 12.819h-3.56v-5.604c0-1.336-.025-3.062-1.868-3.062-1.868 0-2.154 1.458-2.154 2.967v5.699h-3.56V9.048h3.418v1.561h.049c.476-.899 1.637-1.848 3.37-1.848 3.604 0 4.27 2.372 4.27 5.456v6.235z" />
+                            </svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="group flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 hover:from-pink-400 hover:via-red-400 hover:to-yellow-400 shadow-lg hover:shadow-pink-500/25 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-200">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.242 1.308 3.608.058 1.266.069 1.646.069 4.85s-.011 3.584-.069 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.242 1.246-3.608 1.308-1.266.058-1.646.069-4.85.069s-3.584-.011-4.85-.069c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.242-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.974-.974 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.771.131 4.659.414 3.678 1.395c-.98.98-1.263 2.092-1.322 3.373C2.013 5.668 2 6.077 2 12c0 5.923.013 6.332.072 7.612.059 1.281.342 2.393 1.322 3.373.981.981 2.093 1.264 3.374 1.323C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.281-.059 2.393-.342 3.374-1.323.98-.98 1.263-2.092 1.322-3.373.059-1.28.072-1.689.072-7.612 0-5.923-.013-6.332-.072-7.612-.059-1.281-.342-2.393-1.322-3.373-.981-.981-2.093-1.264-3.374-1.323C15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Decorative Divider -->
+                <div class="w-full h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent mb-6"></div>
+
+                <!-- Bottom Row: Menu and Copyright -->
+                <div class="flex flex-col items-center w-full md:flex-row md:justify-between md:items-center">
+                    <!-- Menu -->
+                    <div
+                        class="flex flex-col items-center space-y-6 font-bold text-white md:flex-row md:space-y-0 md:space-x-8 mb-6 md:mb-0">
+                        <!-- item 1 -->
+                        <div class="group relative">
+                            <a href="about.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300 text-lg font-medium tracking-wide">About</a>
+                            <div
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-cyan-400 group-hover:w-full transition-all duration-300">
+                            </div>
+                        </div>
+
+                        <div class="group relative">
+                            <a href="events.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300 text-lg font-medium tracking-wide">Events</a>
+                            <div
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-cyan-400 group-hover:w-full transition-all duration-300">
+                            </div>
+                        </div>
+                        <div class="group relative">
+                            <a href="products.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300 text-lg font-medium tracking-wide">Products</a>
+                            <div
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-cyan-400 group-hover:w-full transition-all duration-300">
+                            </div>
+                        </div>
+                        <div class="group relative">
+                            <a href="support.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300 text-lg font-medium tracking-wide">Support</a>
+                            <div
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-cyan-400 group-hover:w-full transition-all duration-300">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Copyright -->
+                    <div class="text-center md:text-right">
+                        <p class="text-gray-400 font-medium text-sm tracking-wide">
+                            <span class="text-gray-500 font-bold text-base">©</span>
+                            <span class="text-white font-semibold">2025</span>
+                            <span
+                                class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent font-bold">Loopstudios
+                                | Abu Sayeed Rifat</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

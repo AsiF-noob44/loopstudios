@@ -11,23 +11,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-    <title>Loop Studios</title>
+    <title>About - Loop Studios</title>
 </head>
 
 <body>
-    <!-- Hero Section -->
-    <section id="hero">
-        <!-- Hero Container -->
-
+    <!-- Header Section with Background -->
+    <section class="bg-gradient-to-b from-black to-gray-900 py-20">
         <div class="container max-w-6xl mx-auto px-6 py-12">
             <!-- Menu/Logo Container -->
             <nav
                 class="flex items-center justify-between font-bold text-white bg-black/30 backdrop-blur-sm px-6 py-4 rounded-lg relative z-[70]">
                 <!-- Logo -->
-                <img src="/images/logo.svg" alt="Loop Studios Logo">
+                <a href="index.html">
+                    <img src="/images/logo.svg" alt="Loop Studios Logo">
+                </a>
 
                 <!-- Menu -->
-
                 <div class="hidden h-10 font-alata md:flex md:space-x-2">
                     <div class="nav-item">
                         <a href="about.html" class="drop-shadow-lg">About</a>
@@ -70,259 +69,131 @@
                     class="menu-item hover:text-pink-500 transition-colors duration-300 py-3 border-b border-white/20 hover:border-pink-500/50">Support</a>
             </div>
 
-            <div
-                class="max-w-lg mt-32 mb-32 p-4 font-sans text-4xl text-white uppercase border-2 md:p-10 md:m-32 md:mx-0 md:text-6xl">
-                Impressive experiences that deliver
-                <br>
-                <span
-                    class="font-bold animate-pulse bg-gradient-to-r from-fuchsia-500 via-yellow-400 to-cyan-400 bg-clip-text text-transparent">
-                    real results
-                </span>
+            <!-- Page Title -->
+            <div class="max-w-4xl mx-auto mt-20 text-center">
+                <h1 class="text-5xl font-bold text-white mb-8 md:text-6xl">About Us</h1>
+                <div class="h-1 w-40 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto"></div>
             </div>
         </div>
     </section>
 
-
-    <!-- Feature Section -->
-
-    <section id="feature">
-        <!-- Feature Container -->
-
-        <div class="relative container flex flex-col max-w-6xl mx-auto my-32 px-6 text-gray-900 md:flex-row md:px-0">
-            <!-- Image -->
-            <img src="/images/desktop/image-interactive.jpg" alt="Interactive">
-
-            <!-- Text Container -->
-            <div class="top-48 pe-0 bg-white md:absolute md:right-0 md:py-20 md:ps-20">
-                <h2
-                    class="max-w-lg mt-10 mb-6 font-sans text-4xl text-center text-gray-900 uppercase md:text-5xl md:mt-0 md:text-left">
-                    The leader in interactive
-                    <span class="text-blue-700 font-bold animate-pulse">
-                        VR
-                    </span>
-                </h2>
-                <p class="max-w-md text-center md:text-left">
-                    Founded in 2011, Loop Studios has been producing world-class virtual reality projects for some of
-                    the
-                    best companies around the globe. Our expertise in VR technology and design has allowed us to create
-                    immersive experiences that captivate audiences and deliver real results.
+    <!-- Main Content -->
+    <section class="py-20">
+        <div class="container max-w-4xl mx-auto px-6">
+            <!-- Our Story -->
+            <div class="mb-20">
+                <h2 class="text-4xl font-bold mb-8 text-gray-800">Our Story</h2>
+                <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                    Founded in 2011, Loop Studios began as a small team of VR enthusiasts with a big vision. What
+                    started in a garage with basic equipment has evolved into one of the world's leading virtual reality
+                    studios.
                 </p>
+                <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                    Our journey has been marked by continuous innovation and a relentless pursuit of immersive
+                    excellence. We've pioneered new techniques in spatial audio, haptic feedback, and visual rendering
+                    that have set industry standards.
+                </p>
+                <div class="my-12 p-8 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg shadow-lg">
+                    <blockquote class="text-xl italic font-semibold text-gray-700">
+                        "We don't just create virtual realities—we craft meaningful experiences that change how people
+                        see the world."
+                        <footer class="text-sm text-gray-500 mt-2">— Maria Chen, Founder & CEO</footer>
+                    </blockquote>
+                </div>
+            </div>
+
+            <!-- Our Team -->
+            <div class="mb-20">
+                <h2 class="text-4xl font-bold mb-8 text-gray-800">Our Leadership Team</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Team Member 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md transition-transform hover:transform hover:scale-105">
+                        <div class="w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden">
+                            <img src="/images/team/Team-member-1.jpg" alt="Maria Chen"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-2">Maria Chen</h3>
+                        <p class="text-gray-600 text-center mb-4">Founder & CEO</p>
+                        <p class="text-gray-700">With over 15 years in immersive technologies, Maria leads our vision
+                            for the future of VR experiences.</p>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md transition-transform hover:transform hover:scale-105">
+                        <div class="w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden">
+                            <img src="/images/team/team-member-2.jpg" alt="James Torres"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-2">James Torres</h3>
+                        <p class="text-gray-600 text-center mb-4">Chief Technology Officer</p>
+                        <p class="text-gray-700">James drives our technical innovations, ensuring we stay at the cutting
+                            edge of VR development.</p>
+                    </div>
+
+                    <!-- Team Member 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md transition-transform hover:transform hover:scale-105">
+                        <div class="w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden">
+                            <img src="/images/team/team-member-3.jpg" alt="Sarah Johnson"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-2">Adam Johnson</h3>
+                        <p class="text-gray-600 text-center mb-4">Creative Director</p>
+                        <p class="text-gray-700">Adam brings artistic vision to our projects, blending aesthetics with
+                            functionality to create immersive worlds.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our Values -->
+            <div>
+                <h2 class="text-4xl font-bold mb-8 text-gray-800">Our Values</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="p-6 bg-blue-50 rounded-lg shadow-sm">
+                        <div
+                            class="w-16 h-16 flex items-center justify-center bg-blue-500 text-white rounded-full mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Innovation</h3>
+                        <p class="text-gray-700">We constantly push boundaries and explore new frontiers in virtual
+                            reality.</p>
+                    </div>
+
+                    <div class="p-6 bg-purple-50 rounded-lg shadow-sm">
+                        <div
+                            class="w-16 h-16 flex items-center justify-center bg-purple-500 text-white rounded-full mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">User-Centered</h3>
+                        <p class="text-gray-700">Every decision we make prioritizes the end user's experience and
+                            comfort.</p>
+                    </div>
+
+                    <div class="p-6 bg-pink-50 rounded-lg shadow-sm">
+                        <div
+                            class="w-16 h-16 flex items-center justify-center bg-pink-500 text-white rounded-full mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Collaboration</h3>
+                        <p class="text-gray-700">We believe in the power of diverse teams working together to create
+                            amazing experiences.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Creations Section -->
-    <section id="creations">
-        <!-- Creations Container -->
-        <div class="container max-w-6xl mx-auto mt-20 my-32 px-6 text-gray-900 md:px-0">
-            <!-- Creations Header -->
-            <div class="flex justify-center mb-20 md:justify-between">
-                <h2 class="text-4xl text-center uppercase md:text-left md:text-5xl">Our Creations</h2>
-
-                <button class="hidden btn md:block">
-                    See All
-                </button>
-
-            </div>
-
-            <!-- Items Container -->
-            <div class="item-container">
-                <!-- Item 1 -->
-                <div class="group item">
-                    <!-- Desktop Image -->
-                    <img src="/images/desktop/image-deep-earth.jpg" alt="Deep Earth Desktop"
-                        class="hidden w-full duration-200 md:block group-hover:scale-110">
-
-                    <!-- Mobile Image -->
-                    <img src="/images/mobile/image-deep-earth.jpg" alt="Deep Earth Mobile" class="w-full md:hidden">
-
-
-
-                    <!-- Item Gradient -->
-                    <div class="item-gradient">
-                    </div>
-
-                    <!-- Item Text -->
-                    <h5>
-                        Deep Earth
-                    </h5>
-
-
-                </div>
-
-                <!-- Item 2 -->
-                <div class="group item">
-                    <!-- Desktop Image -->
-                    <img src="/images/desktop/image-night-arcade.jpg" alt="Night Arcade Desktop"
-                        class="hidden w-full duration-200 md:block group-hover:scale-110">
-
-                    <!-- Mobile Image -->
-                    <img src="/images/mobile/image-night-arcade.jpg" alt="Night Arcade Mobile" class="w-full md:hidden">
-
-
-
-                    <!-- Item Gradient -->
-                    <div class="item-gradient">
-                    </div>
-
-                    <!-- Item Text -->
-                    <h5>
-                        Night Arcade
-                    </h5>
-
-
-                </div>
-
-                <!-- Item 3 -->
-                <div class="group item">
-                    <!-- Desktop Image -->
-                    <img src="/images/desktop/image-soccer-team.jpg" alt="Soccer Team Desktop"
-                        class="hidden w-full duration-200 md:block group-hover:scale-110">
-
-                    <!-- Mobile Image -->
-                    <img src="/images/mobile/image-soccer-team.jpg" alt="Soccer Team Mobile" class="w-full md:hidden">
-
-
-
-                    <!-- Item Gradient -->
-                    <div class="item-gradient">
-                    </div>
-
-                    <!-- Item Text -->
-                    <h5>
-                        Soccer Team VR
-                    </h5>
-
-
-                </div>
-
-                <!-- Item 4 -->
-                <div class="group item">
-                    <!-- Desktop Image -->
-                    <img src="/images/desktop/image-grid.jpg" alt="Grid Desktop"
-                        class="hidden w-full duration-200 md:block group-hover:scale-110">
-
-                    <!-- Mobile Image -->
-                    <img src="/images/mobile/image-grid.jpg" alt="Grid Mobile" class="w-full md:hidden">
-
-
-
-                    <!-- Item Gradient -->
-                    <div class="item-gradient">
-                    </div>
-
-                    <!-- Item Text -->
-                    <h5>
-                        The Grid
-                    </h5>
-
-
-                </div>
-            </div>
-
-            <!-- Item Container 2 -->
-
-            <div class="item-container mt-10">
-                <!-- Item 5 -->
-                <div class="group item">
-                    <!-- Desktop Image -->
-                    <img src="/images/desktop/image-from-above.jpg" alt="From Above Desktop"
-                        class="hidden w-full duration-200 md:block group-hover:scale-110">
-
-                    <!-- Mobile Image -->
-                    <img src="/images/mobile/image-from-above.jpg" alt="From Above Mobile" class="w-full md:hidden">
-
-
-
-                    <!-- Item Gradient -->
-                    <div class="item-gradient">
-                    </div>
-
-                    <!-- Item Text -->
-                    <h5>
-                        From Up Above VR
-                    </h5>
-
-
-                </div>
-
-                <!-- Item 6 -->
-                <div class="group item">
-                    <!-- Desktop Image -->
-                    <img src="/images/desktop/image-pocket-borealis.jpg" alt="Pocket Borealis Desktop"
-                        class="hidden w-full duration-200 md:block group-hover:scale-110">
-
-                    <!-- Mobile Image -->
-                    <img src="/images/mobile/image-pocket-borealis.jpg" alt="Pocket Borealis Mobile"
-                        class="w-full md:hidden">
-
-
-
-                    <!-- Item Gradient -->
-                    <div class="item-gradient">
-                    </div>
-
-                    <!-- Item Text -->
-                    <h5>
-                        Pocket Borealis
-                    </h5>
-
-
-                </div>
-
-                <!-- Item 7 -->
-                <div class="group item">
-                    <!-- Desktop Image -->
-                    <img src="/images/desktop/image-curiosity.jpg" alt="Curiosity Desktop"
-                        class="hidden w-full duration-200 md:block group-hover:scale-110">
-
-                    <!-- Mobile Image -->
-                    <img src="/images/mobile/image-curiosity.jpg" alt="Curiosity Mobile" class="w-full md:hidden">
-
-
-
-                    <!-- Item Gradient -->
-                    <div class="item-gradient">
-                    </div>
-
-                    <!-- Item Text -->
-                    <h5>
-                        Curiosity
-                    </h5>
-
-
-                </div>
-
-                <!-- Item 8 -->
-                <div class="group item">
-                    <!-- Desktop Image -->
-                    <img src="/images/desktop/image-fisheye.jpg" alt="Fisheye Desktop"
-                        class="hidden w-full duration-200 md:block group-hover:scale-110">
-
-                    <!-- Mobile Image -->
-                    <img src="/images/mobile/image-fisheye.jpg" alt="Fisheye Mobile" class="w-full md:hidden">
-
-
-
-                    <!-- Item Gradient -->
-                    <div class="item-gradient">
-                    </div>
-
-                    <!-- Item Text -->
-                    <h5>
-                        Make it Fisheye
-                    </h5>
-
-
-                </div>
-            </div>
-
-            <!-- Bottom Button Container -->
-            <div class="flex justify-center mt-10 md:hidden">
-                <button class="btn w-full md:hidden">See All</button>
-            </div>
-        </div>
-    </section>
     <footer class="bg-gradient-to-b from-gray-900 to-black border-t border-gray-800">
         <!-- Container -->
         <div class="container max-w-6xl py-16 mx-auto px-6">
@@ -334,13 +205,16 @@
                     class="flex flex-col items-center w-full md:flex-row md:justify-between md:items-center mb-8 md:mb-6">
                     <!-- Logo -->
                     <div class="mb-8 md:mb-0 transform hover:scale-105 transition-transform duration-300">
-                        <img src="/images/logo.svg" alt="footer logo" class="w-48 md:w-44 filter brightness-110">
+                        <a href="index.html">
+                            <img src="/images/logo.svg" alt="footer logo"
+                                class="w-48 md:w-44 filter brightness-110 cursor-pointer">
+                        </a>
                     </div>
 
                     <!-- Social Icons -->
                     <div class="flex items-center justify-center space-x-6 md:justify-end">
                         <!-- Facebook -->
-                        <a href="https://www.facebook.com/asif.saeed.rifat/" target="_blank" rel="noopener noreferrer"
+                        <a href="#" target="_blank" rel="noopener noreferrer"
                             class="group flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-blue-500 to-blue-800 hover:from-blue-400 hover:to-blue-600 shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
                                 class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-200">
@@ -349,8 +223,7 @@
                             </svg>
                         </a>
                         <!-- LinkedIn -->
-                        <a href="https://www.linkedin.com/in/abu-sayeed-rifat-260535336" target="_blank"
-                            rel="noopener noreferrer"
+                        <a href="#" target="_blank" rel="noopener noreferrer"
                             class="group flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-cyan-600 to-blue-900 hover:from-cyan-400 hover:to-blue-700 shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
                                 class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-200">
@@ -359,7 +232,7 @@
                             </svg>
                         </a>
                         <!-- Instagram -->
-                        <a href="https://www.instagram.com/asif_saeed.96/" target="_blank" rel="noopener noreferrer"
+                        <a href="#" target="_blank" rel="noopener noreferrer"
                             class="group flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 hover:from-pink-400 hover:via-red-400 hover:to-yellow-400 shadow-lg hover:shadow-pink-500/25 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
                                 class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-200">
@@ -416,9 +289,8 @@
                             <span class="text-gray-500 font-bold text-base">©</span>
                             <span class="text-white font-semibold">2025</span>
                             <span
-                                class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent font-bold">Loopstudios</span>
-                            <span class="text-gray-500">. By</span>
-                            <span class="text-cyan-400 font-semibold">Abu Sayeed Rifat</span>
+                                class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent font-bold">Loopstudios
+                                | Abu Sayeed Rifat</span>
                         </p>
                     </div>
                 </div>

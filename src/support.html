@@ -1,0 +1,418 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="/images/desktop/image-hero.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <title>Support - Loop Studios</title>
+</head>
+
+<body>
+    <!-- Header Section with Background -->
+    <section class="bg-gradient-to-r from-gray-900 to-gray-800 py-20">
+        <div class="container max-w-6xl mx-auto px-6 py-12">
+            <!-- Menu/Logo Container -->
+            <nav
+                class="flex items-center justify-between font-bold text-white bg-black/30 backdrop-blur-sm px-6 py-4 rounded-lg relative z-[70]">
+                <!-- Logo -->
+                <a href="index.html">
+                    <img src="/images/logo.svg" alt="Loop Studios Logo">
+                </a>
+
+                <!-- Menu -->
+                <div class="hidden h-10 font-alata md:flex md:space-x-2">
+                    <div class="nav-item">
+                        <a href="about.html" class="drop-shadow-lg">About</a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="events.html" class="drop-shadow-lg">Events</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="products.html" class="drop-shadow-lg">Products</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="support.html" class="drop-shadow-lg">Support</a>
+                    </div>
+                </div>
+
+                <!-- Hamburger Menu -->
+                <div class="md:hidden">
+                    <button id="menu-btn" type="button"
+                        class="z-[60] block hamburger md:hidden focus:outline-none relative"
+                        aria-label="Toggle mobile menu" aria-expanded="false">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <div id="menu" class="fixed top-0 left-0 right-0 hidden flex-col w-full h-screen pt-32 px-8 space-y-8
+                text-xl text-white uppercase bg-black/80 backdrop-blur-md z-50 
+                transform transition-all duration-700 ease-in-out">
+                <a href="about.html"
+                    class="menu-item hover:text-pink-500 transition-colors duration-300 py-3 border-b border-white/20 hover:border-pink-500/50">About</a>
+                <a href="events.html"
+                    class="menu-item hover:text-pink-500 transition-colors duration-300 py-3 border-b border-white/20 hover:border-pink-500/50">Events</a>
+                <a href="products.html"
+                    class="menu-item hover:text-pink-500 transition-colors duration-300 py-3 border-b border-white/20 hover:border-pink-500/50">Products</a>
+                <a href="support.html"
+                    class="menu-item hover:text-pink-500 transition-colors duration-300 py-3 border-b border-white/20 hover:border-pink-500/50">Support</a>
+            </div>
+
+            <!-- Page Title -->
+            <div class="max-w-4xl mx-auto mt-20 text-center">
+                <h1 class="text-5xl font-bold text-white mb-8 md:text-6xl">Support Center</h1>
+                <div class="h-1 w-40 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-20 bg-gray-50">
+        <div class="container max-w-6xl mx-auto px-6">
+            <!-- Support Search -->
+            <div class="max-w-3xl mx-auto mb-16">
+                <div class="bg-white rounded-xl shadow-lg p-8 md:p-10">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-6 text-gray-800 text-center">How can we help you?</h2>
+                    <div class="flex items-center bg-gray-100 rounded-lg overflow-hidden mb-8">
+                        <input type="text" placeholder="Search for help articles, tutorials, and more..."
+                            class="py-4 px-6 w-full bg-transparent focus:outline-none text-gray-700">
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white p-4 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span
+                            class="px-4 py-2 bg-gray-200 text-gray-800 rounded-full text-sm hover:bg-gray-300 cursor-pointer transition-colors">VR
+                            Headsets</span>
+                        <span
+                            class="px-4 py-2 bg-gray-200 text-gray-800 rounded-full text-sm hover:bg-gray-300 cursor-pointer transition-colors">Setup
+                            Guide</span>
+                        <span
+                            class="px-4 py-2 bg-gray-200 text-gray-800 rounded-full text-sm hover:bg-gray-300 cursor-pointer transition-colors">Troubleshooting</span>
+                        <span
+                            class="px-4 py-2 bg-gray-200 text-gray-800 rounded-full text-sm hover:bg-gray-300 cursor-pointer transition-colors">Software
+                            Updates</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Support Categories -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <!-- Category 1 -->
+                <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 flex items-center justify-center bg-blue-100 text-blue-600 rounded-lg mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-8 h-8">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">FAQ</h3>
+                    <p class="text-gray-600 mb-6">Find answers to commonly asked questions about our products and
+                        services.</p>
+                    <a href="#" class="flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                        Browse FAQs
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-4 h-4 ml-1">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 flex items-center justify-center bg-green-100 text-green-600 rounded-lg mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-8 h-8">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">User Guides</h3>
+                    <p class="text-gray-600 mb-6">Detailed instructions and tutorials for setting up and using our
+                        products.</p>
+                    <a href="#" class="flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                        View Guides
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-4 h-4 ml-1">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <div
+                        class="w-16 h-16 flex items-center justify-center bg-purple-100 text-purple-600 rounded-lg mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-8 h-8">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Troubleshooting</h3>
+                    <p class="text-gray-600 mb-6">Solve common problems with our step-by-step troubleshooting guides.
+                    </p>
+                    <a href="#" class="flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                        Fix Issues
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-4 h-4 ml-1">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Options -->
+            <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">Contact Support</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <!-- Live Chat -->
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div
+                        class="w-16 h-16 flex items-center justify-center bg-blue-600 text-white rounded-full mb-6 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-8 h-8">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center">Live Chat</h3>
+                    <p class="text-gray-600 mb-6 text-center">Get real-time assistance from our support team. Available
+                        Monday-Friday, 9AM-6PM EST.</p>
+                    <div class="text-center">
+                        <button
+                            class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg shadow transition-colors">
+                            Start Chat
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Email Support -->
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div
+                        class="w-16 h-16 flex items-center justify-center bg-purple-600 text-white rounded-full mb-6 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-8 h-8">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center">Email Support</h3>
+                    <p class="text-gray-600 mb-6 text-center">Send us a message and we'll respond within 24 hours. For
+                        complex issues requiring detailed assistance.</p>
+                    <div class="text-center">
+                        <button
+                            class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg shadow transition-colors">
+                            Email Us
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">Frequently Asked Questions</h2>
+
+                <!-- FAQ Item 1 -->
+                <div class="mb-4 border-b border-gray-200 pb-4">
+                    <button
+                        class="flex items-center justify-between w-full text-left font-semibold text-lg text-gray-800 hover:text-blue-600 focus:outline-none transition-colors">
+                        <span>How do I set up my LoopVR headset for the first time?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-gray-600">
+                        <p>To set up your LoopVR headset:</p>
+                        <ol class="list-decimal pl-5 mt-2 space-y-2">
+                            <li>Charge your headset for at least 2 hours before first use</li>
+                            <li>Download the LoopVR companion app on your smartphone</li>
+                            <li>Follow the in-app setup instructions to connect your headset</li>
+                            <li>Create or sign in to your LoopVR account</li>
+                            <li>Complete the guided setup process in the headset</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="mb-4 border-b border-gray-200 pb-4">
+                    <button
+                        class="flex items-center justify-between w-full text-left font-semibold text-lg text-gray-800 hover:text-blue-600 focus:outline-none transition-colors">
+                        <span>How do I update my LoopVR software?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-gray-600">
+                        <p>Software updates are automatically downloaded when your device is connected to Wi-Fi and has
+                            sufficient battery (above 50%). To manually check for updates:</p>
+                        <ol class="list-decimal pl-5 mt-2 space-y-2">
+                            <li>Go to Settings in your headset menu</li>
+                            <li>Select System > Software Update</li>
+                            <li>If an update is available, follow the on-screen instructions</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="mb-4">
+                    <button
+                        class="flex items-center justify-between w-full text-left font-semibold text-lg text-gray-800 hover:text-blue-600 focus:outline-none transition-colors">
+                        <span>What's the warranty period for LoopVR products?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-gray-600">
+                        <p>All LoopVR hardware products come with a standard 1-year limited warranty that covers
+                            manufacturing defects. Premium products like the LoopVR Pro X come with an extended 2-year
+                            warranty. For software products, we offer a 30-day satisfaction guarantee.</p>
+                        <p class="mt-2">To check your warranty status or make a claim, please visit our <a href="#"
+                                class="text-blue-600 hover:underline">warranty portal</a> or contact customer support.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8">
+                    <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold inline-flex items-center">
+                        View All FAQs
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-4 h-4 ml-1">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gradient-to-b from-gray-900 to-black border-t border-gray-800">
+        <!-- Container -->
+        <div class="container max-w-6xl py-16 mx-auto px-6">
+            <!-- Footer Flex Container -->
+            <div class="flex flex-col items-center space-y-8 md:space-y-0">
+
+                <!-- Top Row: Logo and Social Icons -->
+                <div
+                    class="flex flex-col items-center w-full md:flex-row md:justify-between md:items-center mb-8 md:mb-6">
+                    <!-- Logo -->
+                    <div class="mb-8 md:mb-0 transform hover:scale-105 transition-transform duration-300">
+                        <a href="index.html">
+                            <img src="/images/logo.svg" alt="footer logo"
+                                class="w-48 md:w-44 filter brightness-110 cursor-pointer">
+                        </a>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="flex items-center justify-center space-x-6 md:justify-end">
+                        <!-- Facebook -->
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="group flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-blue-500 to-blue-800 hover:from-blue-400 hover:to-blue-600 shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-200">
+                                <path
+                                    d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0" />
+                            </svg>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="group flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-cyan-600 to-blue-900 hover:from-cyan-400 hover:to-blue-700 shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-200">
+                                <path
+                                    d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM7.12 20.452H3.56V9.048h3.56v11.404zM5.34 7.633c-1.137 0-2.06-.924-2.06-2.06 0-1.137.923-2.06 2.06-2.06 1.137 0 2.06.923 2.06 2.06 0 1.136-.923 2.06-2.06 2.06zm15.112 12.819h-3.56v-5.604c0-1.336-.025-3.062-1.868-3.062-1.868 0-2.154 1.458-2.154 2.967v5.699h-3.56V9.048h3.418v1.561h.049c.476-.899 1.637-1.848 3.37-1.848 3.604 0 4.27 2.372 4.27 5.456v6.235z" />
+                            </svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="group flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 hover:from-pink-400 hover:via-red-400 hover:to-yellow-400 shadow-lg hover:shadow-pink-500/25 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-200">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.242 1.308 3.608.058 1.266.069 1.646.069 4.85s-.011 3.584-.069 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.242 1.246-3.608 1.308-1.266.058-1.646.069-4.85.069s-3.584-.011-4.85-.069c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.242-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.974-.974 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.771.131 4.659.414 3.678 1.395c-.98.98-1.263 2.092-1.322 3.373C2.013 5.668 2 6.077 2 12c0 5.923.013 6.332.072 7.612.059 1.281.342 2.393 1.322 3.373.981.981 2.093 1.264 3.374 1.323C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.281-.059 2.393-.342 3.374-1.323.98-.98 1.263-2.092 1.322-3.373.059-1.28.072-1.689.072-7.612 0-5.923-.013-6.332-.072-7.612-.059-1.281-.342-2.393-1.322-3.373-.981-.981-2.093-1.264-3.374-1.323C15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Decorative Divider -->
+                <div class="w-full h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent mb-6"></div>
+
+                <!-- Bottom Row: Menu and Copyright -->
+                <div class="flex flex-col items-center w-full md:flex-row md:justify-between md:items-center">
+                    <!-- Menu -->
+                    <div
+                        class="flex flex-col items-center space-y-6 font-bold text-white md:flex-row md:space-y-0 md:space-x-8 mb-6 md:mb-0">
+                        <!-- item 1 -->
+                        <div class="group relative">
+                            <a href="about.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300 text-lg font-medium tracking-wide">About</a>
+                            <div
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-cyan-400 group-hover:w-full transition-all duration-300">
+                            </div>
+                        </div>
+
+                        <div class="group relative">
+                            <a href="events.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300 text-lg font-medium tracking-wide">Events</a>
+                            <div
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-cyan-400 group-hover:w-full transition-all duration-300">
+                            </div>
+                        </div>
+                        <div class="group relative">
+                            <a href="products.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300 text-lg font-medium tracking-wide">Products</a>
+                            <div
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-cyan-400 group-hover:w-full transition-all duration-300">
+                            </div>
+                        </div>
+                        <div class="group relative">
+                            <a href="support.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300 text-lg font-medium tracking-wide">Support</a>
+                            <div
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-cyan-400 group-hover:w-full transition-all duration-300">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Copyright -->
+                    <div class="text-center md:text-right">
+                        <p class="text-gray-400 font-medium text-sm tracking-wide">
+                            <span class="text-gray-500 font-bold text-base">©</span>
+                            <span class="text-white font-semibold">2025</span>
+                            <span
+                                class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent font-bold">Loopstudios
+                                | Abu Sayeed Rifat</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

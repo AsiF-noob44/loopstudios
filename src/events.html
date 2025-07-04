@@ -1,0 +1,389 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="/images/desktop/image-hero.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <title>Events - Loop Studios</title>
+</head>
+
+<body>
+    <!-- Header Section with Background -->
+    <section class="bg-gradient-to-r from-purple-900 to-blue-900 py-20">
+        <div class="container max-w-6xl mx-auto px-6 py-12">
+            <!-- Menu/Logo Container -->
+            <nav
+                class="flex items-center justify-between font-bold text-white bg-black/30 backdrop-blur-sm px-6 py-4 rounded-lg relative z-[70]">
+                <!-- Logo -->
+                <a href="index.html">
+                    <img src="/images/logo.svg" alt="Loop Studios Logo">
+                </a>
+
+                <!-- Menu -->
+                <div class="hidden h-10 font-alata md:flex md:space-x-2">
+                    <div class="nav-item">
+                        <a href="about.html" class="drop-shadow-lg">About</a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="events.html" class="drop-shadow-lg">Events</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="products.html" class="drop-shadow-lg">Products</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="support.html" class="drop-shadow-lg">Support</a>
+                    </div>
+                </div>
+
+                <!-- Hamburger Menu -->
+                <div class="md:hidden">
+                    <button id="menu-btn" type="button"
+                        class="z-[60] block hamburger md:hidden focus:outline-none relative"
+                        aria-label="Toggle mobile menu" aria-expanded="false">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <div id="menu" class="fixed top-0 left-0 right-0 hidden flex-col w-full h-screen pt-32 px-8 space-y-8
+                text-xl text-white uppercase bg-black/80 backdrop-blur-md z-50 
+                transform transition-all duration-700 ease-in-out">
+                <a href="about.html"
+                    class="menu-item hover:text-pink-500 transition-colors duration-300 py-3 border-b border-white/20 hover:border-pink-500/50">About</a>
+                <a href="events.html"
+                    class="menu-item hover:text-pink-500 transition-colors duration-300 py-3 border-b border-white/20 hover:border-pink-500/50">Events</a>
+                <a href="products.html"
+                    class="menu-item hover:text-pink-500 transition-colors duration-300 py-3 border-b border-white/20 hover:border-pink-500/50">Products</a>
+                <a href="support.html"
+                    class="menu-item hover:text-pink-500 transition-colors duration-300 py-3 border-b border-white/20 hover:border-pink-500/50">Support</a>
+            </div>
+
+            <!-- Page Title -->
+            <div class="max-w-4xl mx-auto mt-20 text-center">
+                <h1 class="text-5xl font-bold text-white mb-8 md:text-6xl">Upcoming Events</h1>
+                <div class="h-1 w-40 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-20">
+        <div class="container max-w-6xl mx-auto px-6">
+            <!-- Featured Event -->
+            <div class="mb-20 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl overflow-hidden shadow-xl">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8 md:p-12">
+                        <span
+                            class="inline-block px-4 py-1 bg-purple-600 text-white rounded-full text-sm font-semibold mb-4">Featured
+                            Event</span>
+                        <h2 class="text-3xl font-bold mb-4 text-gray-800">VR World Summit 2025</h2>
+                        <div class="flex items-center mb-6">
+                            <div class="mr-4 flex items-center text-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                                </svg>
+                                August 15-17, 2025
+                            </div>
+                            <div class="flex items-center text-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                </svg>
+                                San Francisco, CA
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Join us for the industry's premier VR event featuring keynotes, workshops, and hands-on
+                            demonstrations from the world's leading immersive technology creators.
+                        </p>
+                        <button
+                            class="bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl cursor-pointer">
+                            Register Now
+                        </button>
+                    </div>
+                    <div class="md:w-1/2 relative">
+                        <img src="/images/desktop/summit.jpg" alt="VR World Summit 2025"
+                            class="w-full h-full object-cover object-center">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-purple-900/40 to-blue-900/70 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <div class="text-5xl font-bold mb-4 drop-shadow-lg">2025</div>
+                                <div class="text-xl uppercase tracking-wider drop-shadow-lg">VR SUMMIT</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event List -->
+            <h2 class="text-3xl font-bold mb-8 text-gray-800">Upcoming Events</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Event 1 -->
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:transform hover:scale-[1.02]">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-gray-800">VR Developer Workshop</h3>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Workshop</span>
+                        </div>
+                        <div class="flex items-center text-gray-700 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-5 h-5 mr-2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                            </svg>
+                            September 22, 2025
+                        </div>
+                        <p class="text-gray-600 mb-6">Learn advanced VR development techniques and best practices from
+                            industry experts.</p>
+                        <button
+                            class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300">
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-4 h-4 ml-1">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:transform hover:scale-[1.02]">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-gray-800">Immersive Art Exhibition</h3>
+                            <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">Exhibition</span>
+                        </div>
+                        <div class="flex items-center text-gray-700 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-5 h-5 mr-2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                            </svg>
+                            October 5-10, 2025
+                        </div>
+                        <p class="text-gray-600 mb-6">Experience art like never before in our fully immersive virtual
+                            gallery featuring works from digital artists worldwide.</p>
+                        <button
+                            class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300">
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-4 h-4 ml-1">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:transform hover:scale-[1.02]">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-gray-800">VR Gaming Tournament</h3>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Competition</span>
+                        </div>
+                        <div class="flex items-center text-gray-700 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-5 h-5 mr-2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                            </svg>
+                            November 12-14, 2025
+                        </div>
+                        <p class="text-gray-600 mb-6">Compete against the best VR gamers in this high-stakes tournament
+                            with prizes totaling over $50,000.</p>
+                        <button
+                            class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300">
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-4 h-4 ml-1">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Event 4 -->
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:transform hover:scale-[1.02]">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-gray-800">Enterprise VR Solutions Summit</h3>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Conference</span>
+                        </div>
+                        <div class="flex items-center text-gray-700 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-5 h-5 mr-2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                            </svg>
+                            December 7-8, 2025
+                        </div>
+                        <p class="text-gray-600 mb-6">Discover how leading businesses are leveraging VR technology to
+                            transform their operations and training programs.</p>
+                        <button
+                            class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300">
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-4 h-4 ml-1">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Past Events Section -->
+            <h2 class="text-3xl font-bold my-12 text-gray-800">Past Events</h2>
+            <div class="bg-gray-100 rounded-lg p-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-lg font-bold mb-2">VR Health Conference</h3>
+                        <p class="text-gray-600 mb-2">April 2025</p>
+                        <a href="#" class="text-blue-600 text-sm hover:underline">View Archive</a>
+                    </div>
+                    <div class="bg-white p-6 rounded shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-lg font-bold mb-2">Education & VR Symposium</h3>
+                        <p class="text-gray-600 mb-2">February 2025</p>
+                        <a href="#" class="text-blue-600 text-sm hover:underline">View Archive</a>
+                    </div>
+                    <div class="bg-white p-6 rounded shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-lg font-bold mb-2">VR Film Festival</h3>
+                        <p class="text-gray-600 mb-2">January 2025</p>
+                        <a href="#" class="text-blue-600 text-sm hover:underline">View Archive</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gradient-to-b from-gray-900 to-black border-t border-gray-800">
+        <!-- Container -->
+        <div class="container max-w-6xl py-16 mx-auto px-6">
+            <!-- Footer Flex Container -->
+            <div class="flex flex-col items-center space-y-8 md:space-y-0">
+
+                <!-- Top Row: Logo and Social Icons -->
+                <div
+                    class="flex flex-col items-center w-full md:flex-row md:justify-between md:items-center mb-8 md:mb-6">
+                    <!-- Logo -->
+                    <div class="mb-8 md:mb-0 transform hover:scale-105 transition-transform duration-300">
+                        <a href="index.html">
+                            <img src="/images/logo.svg" alt="footer logo"
+                                class="w-48 md:w-44 filter brightness-110 cursor-pointer">
+                        </a>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="flex items-center justify-center space-x-6 md:justify-end">
+                        <!-- Facebook -->
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="group flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-blue-500 to-blue-800 hover:from-blue-400 hover:to-blue-600 shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-200">
+                                <path
+                                    d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0" />
+                            </svg>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="group flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-cyan-600 to-blue-900 hover:from-cyan-400 hover:to-blue-700 shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-200">
+                                <path
+                                    d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM7.12 20.452H3.56V9.048h3.56v11.404zM5.34 7.633c-1.137 0-2.06-.924-2.06-2.06 0-1.137.923-2.06 2.06-2.06 1.137 0 2.06.923 2.06 2.06 0 1.136-.923 2.06-2.06 2.06zm15.112 12.819h-3.56v-5.604c0-1.336-.025-3.062-1.868-3.062-1.868 0-2.154 1.458-2.154 2.967v5.699h-3.56V9.048h3.418v1.561h.049c.476-.899 1.637-1.848 3.37-1.848 3.604 0 4.27 2.372 4.27 5.456v6.235z" />
+                            </svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="group flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 hover:from-pink-400 hover:via-red-400 hover:to-yellow-400 shadow-lg hover:shadow-pink-500/25 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-200">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.242 1.308 3.608.058 1.266.069 1.646.069 4.85s-.011 3.584-.069 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.242 1.246-3.608 1.308-1.266.058-1.646.069-4.85.069s-3.584-.011-4.85-.069c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.242-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.974-.974 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.771.131 4.659.414 3.678 1.395c-.98.98-1.263 2.092-1.322 3.373C2.013 5.668 2 6.077 2 12c0 5.923.013 6.332.072 7.612.059 1.281.342 2.393 1.322 3.373.981.981 2.093 1.264 3.374 1.323C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.281-.059 2.393-.342 3.374-1.323.98-.98 1.263-2.092 1.322-3.373.059-1.28.072-1.689.072-7.612 0-5.923-.013-6.332-.072-7.612-.059-1.281-.342-2.393-1.322-3.373-.981-.981-2.093-1.264-3.374-1.323C15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Decorative Divider -->
+                <div class="w-full h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent mb-6"></div>
+
+                <!-- Bottom Row: Menu and Copyright -->
+                <div class="flex flex-col items-center w-full md:flex-row md:justify-between md:items-center">
+                    <!-- Menu -->
+                    <div
+                        class="flex flex-col items-center space-y-6 font-bold text-white md:flex-row md:space-y-0 md:space-x-8 mb-6 md:mb-0">
+                        <!-- item 1 -->
+                        <div class="group relative">
+                            <a href="about.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300 text-lg font-medium tracking-wide">About</a>
+                            <div
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-cyan-400 group-hover:w-full transition-all duration-300">
+                            </div>
+                        </div>
+
+                        <div class="group relative">
+                            <a href="events.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300 text-lg font-medium tracking-wide">Events</a>
+                            <div
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-cyan-400 group-hover:w-full transition-all duration-300">
+                            </div>
+                        </div>
+                        <div class="group relative">
+                            <a href="products.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300 text-lg font-medium tracking-wide">Products</a>
+                            <div
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-cyan-400 group-hover:w-full transition-all duration-300">
+                            </div>
+                        </div>
+                        <div class="group relative">
+                            <a href="support.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300 text-lg font-medium tracking-wide">Support</a>
+                            <div
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-cyan-400 group-hover:w-full transition-all duration-300">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Copyright -->
+                    <div class="text-center md:text-right">
+                        <p class="text-gray-400 font-medium text-sm tracking-wide">
+                            <span class="text-gray-500 font-bold text-base">©</span>
+                            <span class="text-white font-semibold">2025</span>
+                            <span
+                                class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent font-bold">Loopstudios
+                                | Abu Sayeed Rifat</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
